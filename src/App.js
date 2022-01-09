@@ -8,14 +8,9 @@ import {
   Routes
 } from "react-router-dom";
 
-import HomePage from './components/pages/homepage/homepage.component.jsx';
+import HomePage from './pages/homepage/homepage.component'
+import ShopPage from './pages/shop/shop.component';
 
-const HatsPage = () =>{
-return(
-  <div>
-    <h1>Hats Page</h1>
-  </div>)
-}
 
 
 function App() {
@@ -24,7 +19,7 @@ function App() {
    
       <Routes>
           <Route path="/" element={<HomePage/>}> </Route>
-          <Route path="/hats" element={<HatsPage/>}> </Route>
+          <Route path="/shop" element={<ShopPage/>}> </Route>
           <Route path="*" element={<HomePage/>} /> 
           </Routes>
     </div>
